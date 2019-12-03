@@ -34,25 +34,12 @@
                     <a class="nav-link" href="personal.html">Personal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
 
     </nav>
-
-    <!--Jumbotron - Currently not using
-    <div class="container-fluid">
-        <div class="row jumbotron">
-            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                <p class="lead">Here you can see a list of professional projects and a list of experiences I have done
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                <a href="#"><button type="button" class="btn btn-outline-secondary">button</button></a>
-            </div>
-        </div>
-    </div> -->
 
     <!--Welcome section-->
     <div class="container-fluid padding mt-1">
@@ -111,7 +98,8 @@
             <div class="card col-sm-12 col-md-3 shadow m-3 pad-project">
                 <div class="card-img my-auto">
                     <a href="#">
-                        <image class="img-fluid" src="src/projects/RealMech/real_mech_pic.jpg" alt="Ball Launcher Machine">
+                        <image class="img-fluid" src="src/projects/RealMech/real_mech_pic.jpg"
+                            alt="Ball Launcher Machine">
                     </a>
                 </div>
                 <h3>Machine Elements - Real Mech</h3>
@@ -182,7 +170,7 @@
                     display and RBG LED.</p>
             </div>
 
-            <!--5680 Chess Piece-->
+            <!--LSVR-->
             <div class="card col-xs-12 col-sm-6 col-md-3 shadow m-3 pad-project">
                 <div class="card-img my-auto">
                     <a href="#">
@@ -190,13 +178,13 @@
                     </a>
                 </div>
                 <h3>CAD 3D Printed Chess Piece Design</h3>
-                <p class="mx-2" align="left">The CAD 3D Printed Chess Piece involved creating a standard chess piece
-                    with a twist in SolidWORKS while still pertaining to several design parameters. I created a rook
-                    with a rounded top and "cannons" coming out the base. The design was then 3D printed, and a mold was
-                    created from the piece.</p>
+                <p class="mx-2" align="left">I performed reseach with Dr. Harne in his Lab of Sound and Vibration
+                    Research during the August 2017 to January 2018. I worked on his origami acoustics project, and
+                    increased the modelling capabilities of the lab by writing a MatLab function allowing for more types
+                    of arrays to be modelled.</p>
             </div>
 
-            <!--3870 Measurements Project-->
+            <!--FEH Robot-->
             <div class="card col-xs-12 col-sm-12 col-md-3 shadow m-3 pad-project">
                 <div class="card-img my-auto">
                     <a href="#">
@@ -213,10 +201,10 @@
     </div>
 
     <!--Two Column Section-->
-    <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false" style="width: 100%;">
-        <div class="carousel-inner" role="listbox" style=" width:100%; height: 900px !important;">
+    <div id="carouselContent" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
             <!--JetCat-->
-            <div class="carousel-item active" id="test">
+            <div class="carousel-item active" id="JetCat">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>Team JetCat</h2>
@@ -237,21 +225,64 @@
                             Primary Research (pg. 8), Needs Chart (pg. 11), bolting analysis (pg. 29-31), Thrust Stand
                             Development (pg. 39-40), and Conclusions/Future Work (pg 53).</p>
                         <p>The pictures below show custom manufactured pieces of the thrust stand and a brief look at my
-                            bolting analysis.</p>
+                            bolting analysis. The graphs show stress and safety factor in the critical bolt group for a
+                            variety of thrust forces. Click the images to enlarge.</p>
                         <br>
-                        <div class="row">
+                        <!--Gallery for JetCat images-->
+                        <div class="row" id="gallery" data-toggle="modal" data-target="#myModal">
                             <div class="col">
-                                <img class="zoom" style="max-width:100%" src="src/projects/Capstone/manufacture.png">
+                                <img class="w-100" src="src/projects/Capstone/manufacture.png">
                             </div>
                             <div class="col">
-                            <img style="max-width:100%" src="src/projects/Capstone/bolt.png">
-                        </div>
+                                <img class="w-100" src="src/projects/Capstone/bolt.png">
+                            </div>
                             <div class="col">
-                            <img class="mb-1" style="max-width:100%" src="src/projects/Capstone/bolt_thrust1.png">
-                            <img style="max-width:100%" src="src/projects/Capstone/bolt_thrust2.png">
+                                <img class="mb-1 w-100" src="src/projects/Capstone/bolt_thrust1.png">
+                                <img class="w-100" src="src/projects/Capstone/bolt_thrust2.png">
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary mb-4">Learn More</a>
+
+                        <!--Modal section-->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <img class="d-block w-100" src="src/projects/Capstone/manufacture.png"
+                                                        alt="Manufactured custom parts.">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img class="d-block w-100" src="src/projects/Capstone/bolt.png"
+                                                        alt="Second slide">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img class="d-block w-100" src="src/projects/Capstone/bolt_thrust1.png"
+                                                        alt="Third slide">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img class="d-block w-100" src="src/projects/Capstone/bolt_thrust2.png"
+                                                        alt="Fourth slide">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Button for downloading files-->
+                        <a href="src/projects/Capstone/Capstone.rar" class="btn btn-primary mb-4">Download Reports</a>
                     </div>
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item"
@@ -259,16 +290,90 @@
                     </div>
                 </div>
             </div>
+
             <!--CAD Chillout-->
-            <div class="carousel-item">
-                <div class="row padding mx-5">
+            <div class="carousel-item" id="Chillout">
+                <div class="row padding mx-5" id="Chillout">
                     <div class="col-md-12 col-lg-6">
                         <h2>CAD Chillout</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>CAD Chillout Desktop Fan was a semester long project during my Computer Aided Design and
+                            Manufacturing technical elective. The idea of the project was to find an everyday item with
+                            somewhat complex geometries as well as a minimum number of parts, and reverse engineer it in
+                            SolidWORKS. Our team chose a desktop fan as it gave us a chance to see the inner workings of
+                            the object, gave insight into how it was created, and allowed us to do an advanced fluid
+                            flow study on the fan.</p>
+                        <p>In total, I modelled five different parts of the fan, including a bolt and four plastic
+                            structural pieces. Below, a dimensioned drawing can be seen from on of the structural
+                            pieces, and isometric views of two others. I go into more detail in the report
+                            (Difficulties, pg. 13) on some of the challenges of modelling these pieces. An image of
+                            stress concentrations during one of the drop tests is also shown, as this ended up being the
+                            teams advanced study. I was in change of this, and the analysis can be seen in the report
+                            (Simulation, pg. 11-12). A video of one of the drop tests can be seen <a
+                                href="https://www.youtube.com/watch?v=EEcEyj5ALYI"><strong>here.</strong></a></p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <!--Gallery for Chillout images-->
+                        <div class="row mb-1" id="gallery" data-toggle="modal" data-target="#ChilloutModal">
+                            <div class="col">
+                                <img class="w-100" src="src/projects/Chillout/MotorCasing.jpg">
+                            </div>
+                            <div class="col">
+                                <img class="w-100" src="src/projects/Chillout/InjMoldStructural.jpg">
+                            </div>
+                        </div>
+                        <div class="row" id="gallery" data-toggle="modal" data-target="#ChilloutModal">
+                            <div class="col">
+                                <img class="mb-1 w-100" src="src/projects/Chillout/InjMoldStructural2.jpg">
+                            </div>
+                            <div class="col">
+                                <img class="w-100" src="src/projects/Chillout/Stress.jpg">
+                            </div>
+                        </div>
+
+                        <a href="src/projects/Chillout/5680 CAD Chillout Project.rar"
+                            class="btn btn-primary  mb-4">Download pictures and report</a>
                     </div>
+
+                    <!--Modal section-->
+                    <div class="modal fade" id="ChilloutModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img class="d-block w-100" src="src/projects/Chillout/MotorCasing.jpg"
+                                                    alt="Dimensioned drawing of motor casing">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img class="d-block w-100"
+                                                    src="src/projects/Chillout/InjMoldStructural.jpg"
+                                                    alt="Injection Molded Structural Piece">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img class="d-block w-100"
+                                                    src="src/projects/Chillout/InjMoldStructural2.jpg"
+                                                    alt="Injection Molded Structural Piece">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img class="d-block w-100" src="src/projects/Chillout/Stress.jpg"
+                                                    alt="Stress graphic of drop test">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Button for downloads-->
                     <div class="col-lg-6">
                         <iframe style="width:100%; height:775px;"
                             src="src/projects/Chillout/TeamA_ProjectPortfolio.pdf"></iframe>
@@ -276,14 +381,33 @@
                 </div>
             </div>
             <!--Machine Elements 2-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="RealMech">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>Machine Elements</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>The Machine Elements project was a semester long project that incorporated two classes worth
+                            of material, Machine Elements I and II. The idea of the project was to create an exhibit for
+                            children that showed some mechanical or physics phenomenon. Our idea was to teach kids about
+                            projectile motion using a simple ball launcher. The ball launcher consisted of a spring,
+                            ball bearing, wire rope, worm gear and regular gear. Kids would pll back on the wire rope
+                            after rotating the launcher with the worm gear and ball bearing to aim at different targets
+                            within the exhibit. The design itself had to maintain a minimum safety factor of 1.25 for
+                            each component while being used for an entire year.</p>
+                        <p>I was in charge of designing the spring for the machine. Initially, I attempted to design the
+                            spring from the top down, determining the geometric constraints and force needed to launch
+                            an baseball about 10 feet. Ignoring friction losses, I came up with a spring constant to
+                            design my spring around. However, using this constant and required safety factor, I
+                            calculated a long spring with an extremely small wire diameter. The spring would not exist
+                            anywhere. So, I decided to take a bottom up approach and find several springs that roughly
+                            fit the geometric dimensions needed. I found how much these needed to be deflected to launch
+                            the ball the required distance, and then found the stresses experienced by the spring.
+                            Analyzing for fatigue stress, one spring was found to maintain the needed safety factor of
+                            1.25, and this was chosen. </p>
+                        <p>To the right is the full analysis of the spring. Below is the poster the team used to present
+                            our project.</p>
+                        <iframe class="w-100" src="src/projects/RealMech/Real_Mech_Poster.pdf" height="500px"></iframe>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <a href="Real_Mech.rar" class="btn btn-primary  mb-4">Download Reports and Poster</a>
                     </div>
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item"
@@ -292,89 +416,318 @@
                 </div>
             </div>
             <!--Injection Mold-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="InjMold">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>Injection Mold</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>The injection molding project consisted of designing a logo or design in SolidWORKS
+                            conforming to several design criteria (no sharp corners, minimum widths or fillets of
+                            0.125in, flat surfaces at 0.5 or 0.25in depth for ejector pin holes). These criteria were
+                            primarily there for manufacturing purposes, as the smallest tool diameter we were using was
+                            0.125in, along with sharp corners being impossible to mill out. Then, using SolidWORKS mold
+                            tools, a mold cavity of the design was created. To CNC the cavity, HSMWorks CAM was used to
+                            create different functions to mill it out. I used an adaptive and pocket clear to mill out
+                            the majority of the work, and contour as a finishing operation.</p>
+                        <p>Pictures of mold cavity and actual molded piece are below. The download includes my
+                            SolidWORKS part files, NC file, and pictures.</p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <!--Gallery for Injection Mold images-->
+                        <div class="row mb-1" id="gallery" data-toggle="modal" data-target="#InjMoldModal">
+                            <div class="col">
+                                <img class="w-100" src="src/projects/Chillout/MotorCasing.jpg">
+                            </div>
+                            <div class="col">
+                                <img class="w-100" src="src/projects/Chillout/InjMoldStructural.jpg">
+                            </div>
+                        </div>
+                        <a href="src/projects/InjMold/5680 Injection Mold Lab.rar" class="btn btn-primary  mb-4">Download
+                            part files and pictures</a>
                     </div>
+
+                    <!--Modal section-->
+                    <div class="modal fade" id="InjMoldModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container col-md-12">
+                                        <div class="row">
+                                            <img class="d-block w-100" src="src/projects/Chillout/MotorCasing.jpg"
+                                                alt="Dimensioned drawing of motor casing">
+                                        </div>
+                                        <div class="row">
+                                            <img class="d-block w-100" src="src/projects/Chillout/InjMoldStructural.jpg"
+                                                alt="Injection Molded Structural Piece">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-lg-6">
                         <img class="img-fluid" src="src/projects/InjMold/mold_iso.JPG">
                     </div>
                 </div>
             </div>
+
+
             <!--NE 5742 Labs-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="RadLabs">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>Radiation Detection and Instrumentation Labs and Abstract</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>During my studies at Ohio State, I obtained a minor in Nuclear Engineering. One of the
+                            classes I took for this was Radiation Instrumentation and Detection with Dr. Cao. Part of
+                            the course was to participate in labs biweekly at the OSU Research Reactor. Each of these
+                            labs had us explore different commonly used radiation detection sensors and equipment, such
+                            as multichannel analyzers and proportional gas filled counters. Below are some graphs of
+                            things that I learned and thought were interesting. For example, the first graph shows the
+                            wall effect of a BF-3 Proportional Counter, due to radiation particles being absorbed into
+                            the walls of the chamber instead of being fully ionized. The next is from a HPGe detector
+                            showing off a Radium-226 spectrum, with energy peaks of Bismuth-214 identified. The HPGe
+                            detector has an incredibly high resolution which makes it great for identifying radioactive
+                            isotopes; however, it is large, expensive and must be kept at cryogenic temperatures to
+                            reduce noise. This limits the applications for this detector.</p>
+
+                        <!--Gallery for Rad Labs images-->
+                        <div class="row mb-1" id="gallery" data-toggle="modal" data-target="#RadLabsModal">
+                            <div class="col">
+                                <img class="w-100" src="src/projects/RadLabs/bf3_pcounter.png">
+                            </div>
+
+                            <div class="col">
+                                <img class="w-100" src="src/projects/RadLabs/radium226_spectrum.png">
+                            </div>
+                        </div>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <p>For the lab reports, I was in charge of the data analysis as well as conclusions based off
+                            this data. To the right is the research abstract required for the class that I wrote on
+                            Nuclear Voltaic Batteries. I wrote about the General Purpose Heat Source Radioisotope
+                            Thermoelectric Generator, an alphavoltaic nuclear battery, and a reciprocating
+                            electromechanical nuclear battery. A download of the labs and report can be obtained by
+                            clicking the button below. </p>
+                        <br>
+                        <a href="src/projects/RadLabs/RadLabs.rar" class="btn btn-primary  mb-4">Download reports and
+                            abstract</a>
                     </div>
+
+                    <!--Modal section-->
+                    <div class="modal fade" id="RadLabsModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container col-md-12">
+                                        <div class="row">
+                                            <img class="d-block w-100" src="src/projects/RadLabs/bf3_pcounter.png"
+                                                alt="Energy spectrum of AmBe using a BF-3 P-Counter">
+                                            <img class="d-block w-100" src="src/projects/RadLabs/radium226_spectrum.png"
+                                                alt="Energy spectrum of Radium-226 using a HPGe detector">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item" src="src/projects/RadLabs/Nuclear_Voltaic_Abstract.pdf">
                     </div>
                 </div>
             </div>
+
             <!--MagLev-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="MagLev">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>MagLev Controller Design</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>My MagLev Controller Design project was another semester long project for my Systems
+                            Integration and Controls class. The idea of the project was to design a controller for a
+                            simplified magnetic levitation system in one direction. The controller had to perform within
+                            a specific set of parameters for a height step reference and force step input. Our final
+                            controller design ended up being a lead-lead-lag, and was just outside of the control panels
+                            for the step reference. Unfortunately, the force step input cause the system to become
+                            unstable. This was the best design we were able to find, and shows the importance of trying
+                            many different controller designs and gains to obtain control parameters.</p>
+                        <p>Going a little more in-depth into each part of the three project parts, the first part
+                            entailed determining the static equation of motion (EoM) for the train in the "y" (vertical)
+                            direction and linearizing it around a operating point. This showed that the only forces on
+                            the train were its weight and the supporting magnetic force. Magnitude and phase plots were
+                            drawn from this EoM. A simple block diagram of the system was made in simulink and simulated
+                            two force step inputs, one without a reference signal and one with. The second part added in
+                            the element of coils to use the electromagnetic force to control the height of the train.
+                            The addition of the coils added a new EoM due to the coil acting like an inductor. This was
+                            included into the simulink diagram and the new response was simulated, showing the system is
+                            unstable without control input. The final part of the project was designing a controller for
+                            the dynamic system found. Control parameters were given, and system damping ratio and
+                            natural frequency were found from these. Then, a transfer function of the system was
+                            determined. Using MatLab's Sisotool, it was shown that P-control was unable to make the
+                            system stable. So, a lead-lead-lag controller was chosen to attempt to get the system to
+                            conform to the control parameters. Our final design was able to control the system with a
+                            step reference but was unable to for a disturbance input. Reports are available for download
+                            by clicking the button below. </p>
+                        <p>The graphs below show simulated responses for inputs from parts 2 and 3, respectively.</p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <!--Gallery for MagLev images-->
+                        <div class="row mb-1" id="gallery" data-toggle="modal" data-target="#MagLevModal">
+                            <div class="col">
+                                <img class="w-100" src="src/projects/MagLev/part2.jpg">
+                            </div>
+                            <div class="col">
+                                <img class="w-100" src="src/projects/MagLev/part3.jpg">
+                            </div>
+                        </div>
+                        <a href="src/projects/MagLev/3360 Project.rar" class="btn btn-primary  mb-4">Download Reports</a>
                     </div>
+
+                    <!--Modal section-->
+                    <div class="modal fade" id="MagLevModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container col-md-12">
+                                        <div class="row">
+                                            <img class="d-block w-100" src="src/projects/MagLev/part2.jpg"
+                                                alt="Simulated response of system with force input from part 2">
+                                            <img class="d-block w-100" src="src/projects/MagLev/part3.jpg"
+                                                alt="Simulated response of system with step reference input from part 3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item" src="src/projects/MagLev/Project_Part_3.pdf">
                     </div>
                 </div>
             </div>
             <!--Arduino Prototype-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="Prototype">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
                         <h2>Arduino Prototyping Lab</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <p>My arduino prototyping lab was a semester long project in my Introduction to Design in
+                            Mechanical Engineering course. The projects goal was to get a taste of what it is like
+                            designing and prototyping a product from scratch - including brainstorming ideas, figuring
+                            out what sensors to use, programming a microcontroller and creating a structure to house the
+                            prototype. I lived with 10 roommates that year of college, so I decided to create a door
+                            lock sensor so try and remind my other roommates to keep the doors locked. I used an
+                            accelerometer to figured out when the door was being open and shut based on some rudimentary
+                            experimental acceleration values I found, an IR distance sensor to detect if the lock was
+                            horizontal or vertical, a servo with an opened/closed label to visually let the person know
+                            if the door was opened or locked, an RGB LED with green meaning open, and red closed, and
+                            finally a 7 segment clock display to count the number of times the door was unlocked. The
+                            arduino was coded in C using QTCreator.</p>
+                        <p>I never ended up using the prototype as it was bulky, and I didn't want to drill into our
+                            house door to fixed it above the lock. Below is a video of the device in action, and to
+                            download my report, click the button at the bottom of the page.</p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <video controls="controls" name="Arduino Prototype Demo" class="w-100"
+                            src="src/projects/Prototype/IMG_2773.mov" height="500px"></video>
+                        <br>
+                        <a href="src/projects/Prototype/Prototype.rar" class="btn btn-primary  mb-4">Download Report</a>
                     </div>
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item" src="src/projects/Prototype/Prototype Lab Report.pdf">
                     </div>
                 </div>
             </div>
-            <!--CAD Chess Piece-->
-            <div class="carousel-item">
+            <!--LSVR-->
+            <div class="carousel-item" id="Chess">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
-                        <h2>CAD Chess Piece Design</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <h2>Lab of Sound and Vibration Research</h2>
+                        <p>This section will outline the research I performed with Dr. Harne in the <a
+                                href="https://lsvr.osu.edu/"><u>Lab of Sound and Vibration Research</u></a>. I was
+                            considered a SIMCenter intern and worked on his origami acoustics project. The goal of the
+                            research is to come up with ways to control sound pressure at specific points in space
+                            without having to do it solely computationally with phase shifts. By doing this with origami
+                            arrays, the transducers could become much smaller, easier to transport and much less
+                            computationally costly. After reading several of his papers (<a
+                                href="https://lsvr.osu.edu/sites/lsvr.osu.edu/files/uploads/harne_origami_acoustics_using_principles_folding_structural_acoustics_simple_large_focusing_sound_energy.pdf"><u>Origami
+                                    Acoustics</u></a>, <a
+                                href="https://lsvr.osu.edu/sites/lsvr.osu.edu/files/uploads/zou_adaptive_acoustic_energy_delivery_near_far_fields_foldable_tessellated_star_transducers.pdf"><u>Adaptive
+                                    Acoustic Energy Delivery</u></a> ) and learning how to use InkScape and Rigid
+                            Origami Simulator, I was given an inhouse built FEA code in MatLab for determining sound
+                            pressure levels (SPL) at points in space above a specific section of the arrays. This code
+                            was limited to arrays that were strictly rectangular, as three of the corners needed to be
+                            detected to rotate the array back to its original plane (Rigid Origami Simulator rotated the
+                            arrays as they folded up). Using this knowledge and a muira-ori array (seen right) I created
+                            a function to determine the farthest three points from the origin that all stayed on the
+                            same plane. These points were rotated back to the original plane before the array was broken
+                            up into its elements and analyzed for sound pressure. The pictures on the right show the
+                            array I was working on before leaving the lab in January 2018.</p>
+                        <p>One of the biggest things I learned by doing this research was the importance of verifying a
+                            model. When I initially was toying with the FEA code given to me, I was blindly throwing it
+                            muira-ori arrays and taking the results as truth. This was a poor way of going about it, as
+                            I really had no way of knowing if the results showed the correct SPL. Dr. Harne guided me to
+                            a solution to verify that my model was working. I created an arc of an array at a specific
+                            length, and input a sound frequency that would be equal to the arc length. By doing this, I
+                            would expect that the SPL would reach a local maximum at a radius length away from the
+                            center of the array when it is folded up to create a half circle. When I did this, the code
+                            I had initially did not indicate these results, and I knew something was wrong with my
+                            model. I narrowed it down to the analysis portion of the code. After consulting with Dr.
+                            Harne, he sent me a different analysis technique to use. Inputting my test case to verify
+                            the model gave the results I expected, a peak in SPL near the radius above the center of the
+                            array when folded in half. After this point, I was able to start exploring other arrays, and
+                            attempted to create a spherical muira-ori array.</p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <a href="https://lsvr.osu.edu/" class="btn btn-primary  mb-4">Link to LSVR</a>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid" style="height:775px" src="src/projects/Chess/chess.JPG">
+                    <div class="col-lg-6 text-center">
+                        <img class="img-fluid mb-1" src="src/projects/LSVR/ss00000.bmp">
+                        <img class="img-fluid" src="src/projects/LSVR/ss00020.bmp">
                     </div>
                 </div>
             </div>
             <!--FEH Robot-->
-            <div class="carousel-item">
+            <div class="carousel-item" id="FEH">
                 <div class="row padding mx-5">
                     <div class="col-md-12 col-lg-6">
-                        <h2>Fundamentals of Honors Engineering: Robot</h2>
-                        <p>Heres a project to the right or bottom depending on the size of the browser</p>
-                        <p>Resize the window to see it move!</p>
+                        <h2>Fundamentals of Engineering Honors: Robot</h2>
+                        <p>The Fundamentals of Engineering Honors (FEH) Robot project was an entire course my second
+                            semester of first year. With a team of three others, the goal of the project was to create
+                            an autonomous robot using the FEH Proteus (microcontroller) that completes a set of tasks on
+                            a course, all while remaining under budget and using limited resources available to us from
+                            the class store. The theme our year was an artic research outpost, and the robot had to
+                            navigate to several areas of the course to grab a sandbag, turn a crank, press buttons in a
+                            specific order, drop off the sandbag in a garage, and finally flip a switch. I was in charge
+                            of the fabrication of the main structural pieces of the robot and coding of the
+                            microcontroller. The main frame was made of wood, and I machined that out using a bandsaw
+                            and belt sander. The crank mechanism and button pusher were created in CAD models and 3D
+                            printed before being assembled to the robot. Coding the proteus was in C and required me to
+                            be in many of the open labs to test out code after uploading it. The hardest part of the
+                            coding was controlling the motors to determine distance moved. In competition, our robot
+                            ended up not performing optimally; however, our group still did fine in the class. </p>
+                        <p>The final report to the right is the most recent version I have, and it outlines most of what
+                            we completed but with some of the appendices missing.</p>
                         <br>
-                        <a href="#" class="btn btn-primary  mb-4">Learn More</a>
+                        <a href="src/projects/FEHRobot/FinalReport3.pdf" class="btn btn-primary mb-4">Download Report</a>
                     </div>
                     <div class="col-lg-6 embed-responsive embed-responsive-1by1">
                         <embed class="embed-responsive-item" src="src/projects/FEHRobot/FinalReport3.pdf">
@@ -382,6 +735,7 @@
                 </div>
             </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
